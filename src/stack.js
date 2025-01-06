@@ -17,18 +17,10 @@ class Stack {
     this.items = [];
   }
 
-  /**
-   * Adds an element to the stack.
-   * @param {any} item The element to add.
-   */
   push(item) {
     this.items.push(item);
   }
 
-  /**
-   * Returns the top element from the stack without deleting it.
-   * @returns {any} The top element, or undefined if the stack is empty.
-   */
   peek() {
     if (this.isEmpty()) {
       return undefined;
@@ -36,10 +28,6 @@ class Stack {
     return this.items[this.items.length - 1];
   }
 
-  /**
-   * Removes and returns the top element from the stack.
-   * @returns {any} The top element, or undefined if the stack is empty.
-   */
   pop() {
     if (this.isEmpty()) {
       return undefined;
@@ -47,12 +35,8 @@ class Stack {
     return this.items.pop();
   }
 
-  /**
-   * Checks if the stack is empty.
-   * @returns {boolean} True if the stack is empty, false otherwise.
-   */
   isEmpty() {
-    return this.items.length === 0;
+    return this.items.length == 0;
   }
 }
 
